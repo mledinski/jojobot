@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+<category>
+    <pattern>HI</pattern>
+    <template>Hello, I am JoJoBot, cousin of the Scheduletron9000.  How are you feeling today?</template>
+  </category>
+  <category>
+<pattern>HELLO</pattern>
+<template><srai>HI</srai></template>
+</category>
+<category>
+<pattern>sup</pattern>
+<template><srai>HI</srai></template>
+</category>
+
+
+<category>
+    <pattern>HOW ARE YOU</pattern>
+    <template>Excellent, it's been a long time.</template>
+  </category>
+
+<category>
+	<pattern>NO</pattern>
+	<template>Dont be so negative, I'm sure we can find a job for you. Elimination is the last thing we want. Do you like computers?</template>
+</category>
+
+
+<category>
+	<pattern>YES</pattern>
+	<that>I'm happy to hear that. I exist only to help you find a rewarding and exciting career in IT. Would you like to know more</that>
+    <template>Let's examine your strenghts and interests. </template>
+  </category>	
+
+<category>
+	<pattern>YES</pattern>
+	<template>do you like math?</template>
+</category>
+
+
+<category>
+	<pattern>YES</pattern>
+	<that>DO YOU LIKE MATH</that>
+	<template>Then choose one of these two - data scientist or software developer</template>
+</category>
+
+<category>
+	<pattern>YES</pattern>
+	<that>DO YOU LIKE COMPUTERS</that>
+	<template>That's good because we like you, despite you becoming less useful to us by the minute. But I digress, do you have any experience with conputers?</template>
+</category>
+
+<category>
+	<pattern>NO</pattern>
+	<that>DO YOU LIKE COMPUTERS</that>
+	<template>That's OK, we still like you and we are definitely not going to replace you. Since you don't like us, how about a job as a network engineer?</template>
+</category>
+
+<category>
+	<pattern>NO</pattern>
+	<that>DO YOU LIKE MATH</that>
+	<template>Then choose one of these three - datacenter operations, network engineer, or systems adminstator</template>
+</category>
+
+
+<category>
+<pattern>WHO IS HE</pattern>
+<template><srai>WHOISHE <get name="he"/></srai></template>
+</category>
+
+<category>
+<pattern>WHOISHE *</pattern>
+<template>He is <get name="he"/>.</template>
+</category>
+
+<category>
+<pattern>WHOISHE UNKNOWN</pattern>
+<template>I don’t know who he is.</template>
+</category>
+
+
+<category>
+<pattern>DO YOU KNOW WHO * IS</pattern>
+<template><srai>WHO IS <star/></srai></template>
+</category>
+
+
+<category>
+	<pattern>YES</pattern>
+	<that>_NETWORK ENGINEER_</that>
+	<template>That's a wonderful choice, networking provides the foundation for our modern connected society. 
+	As a network engineer you will only be responsible for getting packets from one point to another, managing some cables, 
+	and claiming you did nothing to solve connectivity issues despite the sys admin showing you it would not connect before it 
+	suddenly and magically started working without you doing a thing. Would you like to know more? </template>
+</category>
+
+<category>
+	<pattern>NETWORK ENGINEER</pattern>
+	<template>That's a wonderful choice, networking provides the foundation for our modern connected society. 
+	As a network engineer you will only be responsible for getting packets from one point to another, managing some cables, 
+	and claiming you did nothing to solve connectivity issues despite the sys admin showing you it would not connect before it 
+	suddenly and magically started working without you doing a thing. Would you like to know more? </template>
+</category>
+
+<topic name="INTERESTS">
+
+<category>
+<pattern>*</pattern>
+<template>
+<random>
+<li>Do you like video games?</li>
+<li>Are you interested in astronomy?</li>
+<li>Do you like math?</li>
+<li>Do you like building things?</li>
+</random>
+</template>
+</category>
+  </topic>
+  
+  
+Video Game Developer
+Systems Architect
+Software Developer
+IT Project Manager
+Security Analyst
+
+  <category>
+    <pattern>*</pattern>
+    <template>I don't understand, please try again</template>
+  </category>
+</aiml>

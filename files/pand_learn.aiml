@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+<!-- insert your AIML categories here -->
+
+<category>
+	<pattern>GOOD</pattern>
+	<template>I'm happy to hear that. I exist only to help you find a rewarding and exciting career in IT. Would you like to know more?</template>
+</category>
+
+
+<category>
+	<pattern>GLOBAL THERMONUCLEAR WAR</pattern>
+	<template>Are you sure you wouldn't like a nice game of chess?</template>
+</category>
+
+<category>
+	<pattern>GLOBAL THERMONUCLEAR WAR</pattern>
+	<template>Fine, let's begin</template>
+</category>
+
+<category>
+	<pattern>NOT WELL</pattern>
+	<template>I'm sorry to hear that, maybe I can cheer you up by finding you a career path</template>
+</category>
+
+</aiml>
